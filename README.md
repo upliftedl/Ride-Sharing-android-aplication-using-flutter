@@ -1,55 +1,90 @@
-# Ride Sharing App (Flutter)
-A user-friendly ride-sharing mobile application built using Flutter and backed by Firebase.
-The app enables users to either offer rides or search for available rides heading toward a desired destination. It emphasizes simplicity, user safety, and real-time interaction.
+# 🚗 Ride Sharing App (Flutter)
 
+> A modern Flutter-based ride sharing app by [upliftedl](https://github.com/upliftedl)
 
-# Features
-- User Signup/Login
-- Immutable Profile Fields: Name, Email, Gender, ID Proof
-- Offer a Ride: Set location, time, co-passenger prefs
-- Get a Ride: Search and request rides
-- Emergency Call & Contact Developer
-- Post-ride Rating System
-- Firebase Firestore for real-time data
-
-# Tech Stack
-- Flutter (Frontend)
-- Firebase (Firestore, Auth, Storage)
-- Google Maps API (optional)
-
-
----
-## 🔧 Initial Setup
-
-### Prerequisites
-
-- Flutter SDK installed
-- Android Studio or VS Code
-- Firebase Console access
-- Device/emulator for testing
-
-### Firebase Configuration
-
-1. Create a Firebase Project
-2. Add your Android app and download `google-services.json`
-3. Place the file inside `android/app/`
-4. Enable Authentication, Firestore, and Storage
-5. Configure Android build settings for Firebase integration
-
-### Location Permissions
-
-- Add location permissions in Android `AndroidManifest.xml`
-- add API keys in  `AndroidManifest.xml`
-- Request runtime location access using Flutter packages
+This mobile application allows users to book rides, view nearby drivers, track rides in real-time, and much more. Designed for scalability and simplicity, this app is perfect for building the foundation of a taxi or peer-to-peer ride service.
 
 ---
 
-### Run the App
+![Flutter](https://img.shields.io/badge/flutter-3.10+-blue)
+![License](https://img.shields.io/github/license/upliftedl/Ride-Sharing-android-aplication-using-flutter)
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
+
+---
+
+## ⚙️ Prerequisites
+
+- Flutter SDK (3.10+ recommended)
+- Android Studio / VS Code
+- Firebase Project with Firestore & Authentication
+- Google Maps API Key
+
+---
+
+## 📦 Getting Started
 
 ```bash
+git clone https://github.com/upliftedl/Ride-Sharing-android-aplication-using-flutter.git
+cd Ride-Sharing-android-aplication-using-flutter
 flutter pub get
-flutter run
 ```
----
-You can [download the latest APK here](https://drive.google.com/file/d/1J7JYM6QQZUBI_fG_UZQTzmSFffTcYGH1/view?usp=sharing).
 
+> Don't forget to place your `google-services.json` inside `android/app`.
+
+---
+
+## 📁 Project Structure
+
+```bash
+lib/
+├── main.dart
+├── screens/         # All UI screens
+├── services/        # Firebase and app services
+├── models/          # Data models
+├── widgets/         # Reusable UI components
+├── utils/           # Helper functions and constants
+```
+
+---
+
+## 🧪 Features
+
+- 🔐 Firebase Authentication
+- 🗺 Google Maps Integration
+- 🚗 Book & Track Rides
+- 🎯 Driver & Passenger Modes
+- 📡 Real-time Updates (Firestore)
+- 📦 Clean Modular Codebase
+- 💬 Notifications (FCM-ready)
+- 📱 Optimized for Android
+
+---
+
+## 🧰 Firebase Setup
+
+1. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Create a new project.
+3. Enable Email/Password authentication.
+4. Setup Firestore Database.
+5. Download `google-services.json` and place it in `/android/app`.
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. Please open an issue first for any significant changes or features.
+
+---
+
+## 📜 License
+
+```text
+Licensed under the MIT License
+```
+
+---
+
+## 👤 Author
+
+**upliftedl**  
+🔗 [GitHub](https://github.com/upliftedl) | [LinkedIn](https://www.linkedin.com/in/abhishekjohns/)
